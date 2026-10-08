@@ -431,6 +431,10 @@ document.querySelectorAll('.country-shapes [data-country]').forEach(shape=>{
 (() => {
   'use strict';
   const pairs = [
+  ["Diğer bağlantılar", "More links"],
+  ["Hakkımızda", "About us"],
+  ["Hizmetlerimiz", "Our services"],
+  ["Referanslarımız", "Our references"],
   [
     "BOMAR | İnşaat, Mimari ve Danışmanlık",
     "BOMAR | Construction, Architecture and Consultancy"
@@ -866,3 +870,14 @@ document.querySelectorAll('.country-shapes [data-country]').forEach(shape=>{
   }, true);
   refresh();
 })();
+
+const moreNav = document.querySelector('.more-nav');
+document.addEventListener('click', event => {
+  if (moreNav && (!moreNav.contains(event.target) || event.target.closest('.more-nav-links a'))) moreNav.open = false;
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && moreNav?.open) {
+    moreNav.open = false;
+    moreNav.querySelector('summary').focus();
+  }
+});
