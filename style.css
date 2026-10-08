@@ -1315,3 +1315,6 @@ footer > p {
 .certificate-card h3 { font-size: 17px; margin: 18px 0 10px; }
 .certificate-card p { color: #a9adb6; font-size: 13px; }
 @media(max-width: 650px) { .certificate-grid { grid-template-columns: 1fr; } }
+
+/* Light backing keeps the red emblem and navy lettering legible. */
+.logo, .footer-logo { background: #f5f6f8; padding: 2px 10px; border-radius: 6px; flex-shrink: 0; }
