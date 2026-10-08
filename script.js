@@ -898,3 +898,21 @@ document.addEventListener('keydown', event => {
     moreNav.querySelector('summary').focus();
   }
 });
+
+const syncMobileMenu = () => {
+  const open = navLinks.classList.contains('mobile-active') && window.innerWidth <= 1100;
+  menuButton.setAttribute('aria-expanded', String(open));
+  menuButton.setAttribute('aria-label', document.documentElement.lang === 'en' ? (open ? 'Close menu' : 'Open menu') : (open ? 'Menüyü kapat' : 'Menüyü aç'));
+  document.body.style.overflow = open ? 'hidden' : '';
+};
+menuButton.addEventListener('click', syncMobileMenu);
+navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', syncMobileMenu));
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1100) { navLinks.classList.remove('mobile-active'); menuButton.textContent = '☰'; }
+  syncMobileMenu();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && navLinks.classList.contains('mobile-active')) {
+    navLinks.classList.remove('mobile-active'); menuButton.textContent = '☰'; syncMobileMenu(); menuButton.focus();
+  }
+});

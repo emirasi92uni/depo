@@ -1327,3 +1327,17 @@ footer > p {
 html[lang="tr"] .foreword-copy[lang="en"], html[lang="en"] .foreword-copy[lang="tr"] { display: none; }
 
 .foreword h2 { color: #f5f6f8; }
+
+@media (max-width: 1100px) {
+  .navbar, .navbar.scrolled { height: 76px; padding: 0 5vw; background: #101114; backdrop-filter: none; }
+  .navbar .logo, .navbar .nav-right { position: relative; z-index: 2; }
+  .nav-right { gap: 14px; }
+  .menu-button { width: 40px; height: 44px; }
+  .nav-links.mobile-active { top: 76px; height: calc(100dvh - 76px); padding: 22px 7vw 40px; gap: 10px; background: #101114; z-index: 1; overflow-y: auto; overscroll-behavior: contain; }
+  .nav-links.mobile-active > a { font-size: 22px; letter-spacing: .2px; line-height: 1.4; width: 100%; padding: 10px 0; }
+  .nav-links.mobile-active a::after { bottom: 2px; }
+  .more-nav { width: 100%; }
+  .more-nav-links { position: static; margin-top: 4px; box-shadow: none; }
+  .nav-links.mobile-active .more-nav-links a { font-size: 16px; letter-spacing: 0; }
+}
+@media (max-width: 360px) { .navbar .brand-logo { width: 125px; } .nav-right { gap: 8px; } }
