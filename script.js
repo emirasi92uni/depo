@@ -712,6 +712,10 @@ document.querySelectorAll('.country-shapes [data-country]').forEach(shape=>{
     "HEAD OFFICE"
   ],
   [
+    "CEP TELEFONU",
+    "MOBILE"
+  ],
+  [
     "E-POSTA",
     "EMAIL"
   ],
@@ -732,8 +736,8 @@ document.querySelectorAll('.country-shapes [data-country]').forEach(shape=>{
     "+90 --- --- -- -- — Placeholder; phone unverified"
   ],
   [
-    "BİZE ULAŞIN (Bağlantı hazırlanıyor)",
-    "CONTACT US (Link pending)"
+    "BİZE ULAŞIN",
+    "CONTACT US"
   ],
   [
     "İnşaat · Mimari · Mühendislik · Danışmanlık",
