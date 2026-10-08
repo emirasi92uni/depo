@@ -1325,3 +1325,5 @@ footer > p {
 .foreword-copy p { margin-bottom: 22px; }
 .foreword-signature { padding-top: 12px; color: white; font-weight: 600; }
 html[lang="tr"] .foreword-copy[lang="en"], html[lang="en"] .foreword-copy[lang="tr"] { display: none; }
+
+.foreword h2 { color: #f5f6f8; }
