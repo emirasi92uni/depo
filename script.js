@@ -431,6 +431,22 @@ document.querySelectorAll('.country-shapes [data-country]').forEach(shape=>{
 (() => {
   'use strict';
   const pairs = [
+["Sertifikalar", "Certificates"],
+["SERTİFİKALARIMIZ", "OUR CERTIFICATES"],
+["BELGE ARŞİVİ", "DOCUMENT ARCHIVE"],
+["Sertifikalar ve Belgeler", "Certificates and Documents"],
+["BOMAR / ŞG PROJE ortak girişimi kataloğundan alınmıştır. Belgeler ŞG PROJE adına düzenlenmiştir. Katalogdaki tarihleriyle sunulur; güncel geçerlilikleri teyit edilmemiştir.", "Taken from the BOMAR / ŞG PROJE joint venture catalogue. Documents were issued to ŞG PROJE. They are presented as dated in the catalogue; current validity has not been verified."],
+["BELGELERİ PDF OLARAK AÇ ↗", "OPEN DOCUMENTS AS PDF ↗"],
+["ISO 14001:2015 · ISO 9001:2015", "ISO 14001:2015 · ISO 9001:2015"],
+["Katalog PDF sayfası 38 · Büyüt ↗", "Catalogue PDF page 38 · Enlarge ↗"],
+["OHSAS 18001:2007 · İş deneyim belgesi", "OHSAS 18001:2007 · Work experience document"],
+["Katalog PDF sayfası 39 · Büyüt ↗", "Catalogue PDF page 39 · Enlarge ↗"],
+["TOKİ · İş deneyim belgeleri", "TOKİ · Work experience documents"],
+["Katalog PDF sayfası 40 · Büyüt ↗", "Catalogue PDF page 40 · Enlarge ↗"],
+["TOKİ / Ankara Valiliği · İş deneyim belgeleri", "TOKİ / Ankara Governorate · Work experience documents"],
+["Katalog PDF sayfası 41 · Büyüt ↗", "Catalogue PDF page 41 · Enlarge ↗"],
+["Ankara Ticaret Odası · Faaliyet ve sicil belgeleri", "Ankara Chamber of Commerce · Activity and registration documents"],
+["Katalog PDF sayfası 42 · Büyüt ↗", "Catalogue PDF page 42 · Enlarge ↗"],
   ["Diğer bağlantılar", "More links"],
   ["Hakkımızda", "About us"],
   ["Hizmetlerimiz", "Our services"],

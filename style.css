@@ -1307,3 +1307,11 @@ footer > p {
   .nav-links.mobile-active .more-nav-links a { font-size: 16px; letter-spacing: 0; }
   .nav-links.mobile-active { overflow-y: auto; }
 }
+
+.certificate-note { max-width: 900px; color: #a9adb6; line-height: 1.8; margin-bottom: 30px; }
+.certificate-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin-bottom: 32px; }
+.certificate-card { padding: 16px; border: 1px solid #34363c; background: #17191e; }
+.certificate-card img { width: 100%; display: block; }
+.certificate-card h3 { font-size: 17px; margin: 18px 0 10px; }
+.certificate-card p { color: #a9adb6; font-size: 13px; }
+@media(max-width: 650px) { .certificate-grid { grid-template-columns: 1fr; } }
