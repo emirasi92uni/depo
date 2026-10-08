@@ -431,6 +431,7 @@ document.querySelectorAll('.country-shapes [data-country]').forEach(shape=>{
 (() => {
   'use strict';
   const pairs = [
+  ["Önsöz", "Foreword"],
 ["Sertifikalar", "Certificates"],
 ["SERTİFİKALARIMIZ", "OUR CERTIFICATES"],
 ["BELGE ARŞİVİ", "DOCUMENT ARCHIVE"],
@@ -792,7 +793,7 @@ document.querySelectorAll('.country-shapes [data-country]').forEach(shape=>{
   let observer;
   const button = document.getElementById('language-toggle');
   if (!button) return;
-  const excluded = node => node.parentElement?.closest('script, style, noscript, #language-toggle, .world-map-panel');
+  const excluded = node => node.parentElement?.closest('script, style, noscript, #language-toggle, .world-map-panel, .foreword-copy');
   function translateValue(value) {
     const pair = byTR.get(normalize(value)) || byEN.get(normalize(value));
     if (!pair) return value;
